@@ -1,0 +1,173 @@
+/* fontes  */
+@import url('https://fonts.googleapis.com/css2?family=Italiana&family=Roboto&display=swap');
+
+/* variaveis */
+
+:root {
+    --header-height: 4.5rem;
+
+    /* cores */
+    --first-color: #04e404;
+    --first-color_alt: #040404;
+    --second-color: #54a3e41c;
+    --white-color: #f4f4f4;
+    --container-color: #54a4e4;
+    --cor-do-estado: #2ecc71;
+
+    /* tipografia */
+    --font-geral: 'Roboto', sans-serif;
+    --font-menu: 'Italiana', serif;
+    --big-font-size: 2rem;
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1rem;
+    --normal-font-size: .938rem;
+    --small-font-size: .813rem;
+
+    /* font weight  */
+    --font-light: 300;
+    --font-medium: 400;
+    --font-bold: 700;
+
+    /* margins */
+    --mb-1: .5rem;
+    --mb-2: 1rem;
+    --mb-3: 1.5rem;
+    --mb-4: 2rem;
+    --mb-5: 2.5rem;
+    --mb-6: 3rem;
+
+    /* z indexs */
+    --z-fixed: 100;
+    --z-tooltip: 10;
+}
+
+    /* base */
+*{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-size: 10px;
+}
+
+body {
+    background: var(--white-color);
+}
+
+.menu img {
+    position: absolute;
+    left: 5%;
+    top: 3%;
+
+}
+
+.menu {
+    background: none;
+    text-align: center;
+    height: 15rem;
+    width: 100%;
+}
+
+.menu ul {
+    display: flex;
+    list-style: none; 
+    justify-content: flex-end;
+}
+
+.menu ul li { 
+    margin: 1.5rem;
+    padding: 1.5rem;
+    
+    
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: var(--container-color);
+    font-family: var(--font-geral);
+    font-size: 2rem;
+}
+
+.estado {
+    display: none;
+}
+.menu ul li:hover .estado {
+    display: block;
+    position: absolute;
+    background: var(--second-color);
+    margin-top: 1rem;
+    margin-left: -3.8rem;
+    width: 20%;
+    height: 25%;
+    padding: 1rem;
+    
+}
+
+.menu ul li:hover .estado h3 {
+    font-size: 1.5rem;
+    font-family: var(--font-geral);
+    padding: 1rem;
+
+}
+
+.menu ul li:hover .estado p {
+    font-size: 1.3rem;
+    letter-spacing: normal;
+    text-align: left;
+}
+/* state History */
+
+.state h1 {
+    color: var(--container-color);
+    font-family: var(--font-geral);
+    margin: 2rem 7rem 2rem 7rem;
+    font-size: 2rem;
+    
+
+}
+#searchbar{
+    margin-left: 15%;
+    padding:1.5rem;
+    border-radius: 1rem;
+    color: var(--container-color);
+    font-family: var(--font-geral);
+    font-size: 2rem;
+    border: 1px solid var(--container-color);
+    margin: 2rem 7rem 2rem 7rem;
+  }
+
+  input[type=text] {
+     width: 30%;
+     -webkit-transition: width 0.15s ease-in-out;
+     transition: width 0.15s ease-in-out;
+  }
+
+  input[type=text]:focus {
+    width: 35%;
+    border: 1px solid var(--container-color);
+  }
+
+ #list{
+   font-size:  1.5em;
+   margin: 2rem 7rem 2rem 10rem;
+  }
+
+  #list li {
+    padding: .5rem;
+    font-family: var(--font-geral);
+    font-size: 1.5rem;
+    color: #2ecc71;
+  }
+
+.maquina{
+  display: list-item;    
+ }
+ 
+
+#map {
+    height: 40rem;
+    width: 50%;
+    background: var(--second-color);
+    margin: 10% auto;
+    border: solid 1px var(--first-color);
+}
